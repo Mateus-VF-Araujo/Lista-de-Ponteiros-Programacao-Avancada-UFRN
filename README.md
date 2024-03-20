@@ -1,3 +1,3 @@
-# Lista de Ponteiros - Programacao - Avancada - UFRN
+# Lista de Ponteiros - Programação Avançada - UFRN
 
-Aluno: Mateus Vinicius Figueredo de Araujo
+Aluno: Mateus Vinicius Figueredo de Araújo
