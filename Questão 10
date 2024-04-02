@@ -1,0 +1,10 @@
+10. Qual será a saída do seguinte programa
+
+#include <stdio.h>
+void main(){
+  int const *x = 3;
+  printf("%d", ++(*x));
+}
+
+Não terá saída, pois está sendo atribuido um inteiro constante a um ponteiro, algo que não é possível. Para corrigir, seria necessário o uso de um & para que o ponteiro 'x' aponte
+para o endereço de 3, o que seria válido.
