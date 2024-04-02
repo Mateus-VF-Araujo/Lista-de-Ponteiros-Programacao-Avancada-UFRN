@@ -1,0 +1,15 @@
+9. Qual será a saída do seguinte programa
+
+#include <stdio.h>
+struct teste{
+  int x = 3;
+  char nome[] = "jose";
+};
+main(){
+  struct teste *s;
+  printf("%d", s->x);
+  printf("%s", s->name);
+}
+
+Não terá saída, pois o programa não ira compilar devido a erros encontrados. Na struct, as variaveis não podem ser inicializadas dentro dela mesma, além disso, não há alocação
+de memória para a struct, por isso é preciso usar o malloc.
