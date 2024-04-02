@@ -1,0 +1,29 @@
+4. Determine o que será mostrado pelo seguinte programa (compile-o, execute-o e verifique se
+foram obtidas as respostas esperadas, justificando o porque de cada uma).
+
+a = 20 --> é a resposta esperada. É atribuido um valor a variável 'valor', o ponteiro p1 aponta para o endereço de 'valor' e quando *p1 aponta para inteiro 20,
+naquele endereço de 'valor', o inteiro é 10 é substituido pelo inteiro 20;
+
+b = 29.0 --> é a mesma explicação do item a, porém agora com floats e não com inteiros;
+
+c = P --> é a resposta esperada. o ponteiro 'p3' aponta para o endereço da primeira letra do char nome e depois é atribuido a variável aux a letra para qual o endereço de memória
+está apontando, que no caso é P;
+
+d = e --> é a mesma explicação do item c, porém 'p3' aponta para o endereço de uma letra em outra posição;
+
+e -->
+f -->
+g -->
+h -->
+i -->
+j -->
+k -->
+l -->
+m -->
+n -->
+
+
+
+
+
+
