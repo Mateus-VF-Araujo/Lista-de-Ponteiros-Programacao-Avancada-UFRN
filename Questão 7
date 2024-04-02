@@ -1,0 +1,20 @@
+7. Considerando a declaração
+
+int mat[4], *p, x;
+
+quais das seguintes expressões são válidas? Justifique.
+
+p = mat + 1;
+p = mat;
+p = mat;
+x = (*mat);
+
+São todas válidas.
+
+Na primeira expressão 'p' aponta para o endereço do segundo elemento do vetor, pois como a posição do elemento não é especificada, mat representa o endereço do primeiro elemento
+vetor e tem o incremento de +1 que muda a posição do vetor.
+
+Na segunda e terceira expressão (as expressões estão repetidas na lista) 'p' aponta para o endereço do primeiro elemento do vetor, pois como a posição do elemento não é 
+especificada, mat representa o endereço do primeiro elemento vetor.
+
+Na última expressão, está sendo atribuido a x, que é um inteiro, o valor armazenado no endereço do primeiro elemento do vetor.
