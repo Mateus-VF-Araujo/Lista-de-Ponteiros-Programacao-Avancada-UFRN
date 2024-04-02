@@ -1,0 +1,14 @@
+6. Assumindo que pulo[] é um vetor do tipo int, quais das seguintes expressões referenciam o
+valor do terceiro elemento do vetor?
+
+◦ *(pulo + 2);
+◦ *(pulo + 4);
+◦ pulo + 4;
+◦ pulo + 2;
+
+Solução: 
+
+Seria a primeira expressão, pois como ele aponta para o valor do terceiro elemento do vetor, (0,1,2 --> 0 + 2 = 2 --> 2 = terceiro elemento do vetor).
+
+Não poderia ser a última expressão por apontar para o endereço e não o valor armazenado nesse endereço. E não poderia ser as outras duas expressões, pois trabalham com o quinto
+elemento do vetor
