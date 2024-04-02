@@ -8,7 +8,6 @@
 
 /* double: 8 bytes --> x+1 = 4100, x+2 = 4108 e x+3 = 4116*/
 
-
 #include <stdio.h>
 
 int main() {
