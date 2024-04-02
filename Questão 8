@@ -1,1 +1,22 @@
+O que fazem os seguintes programas em C?
 
+int main(){
+  int vet[] = {4, 9, 13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ", *(vet+i));
+  }
+
+O primeiro programa imprimi todos os valores para quais os endereços apontam. Como temos um vetor com 3 elementos e um contador i, o laço for vai imprimir todos os valores para
+para qual os endereços de cada elemento do vetor aponta, de 0 a 2.
+
+int main(){
+  int vet[] = {4, 9, 13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i);
+  }
+}
+
+O segundo segue a mesma linha do primeiro programa, porém ao invés de imprimir os valores para qual os endereços apontam, o programa vai imprimir os próprios endereços de cada
+elemento do vetor
