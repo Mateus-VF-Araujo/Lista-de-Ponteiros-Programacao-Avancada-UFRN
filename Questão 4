@@ -11,16 +11,29 @@ está apontando, que no caso é P;
 
 d = e --> é a mesma explicação do item c, porém 'p3' aponta para o endereço de uma letra em outra posição;
 
-e -->
-f -->
-g -->
-h -->
-i -->
-j -->
-k -->
-l -->
-m -->
-n -->
+e = P --> no item e, 'p3' aponta para o endereço do primeiro caractere do char. Quando é executado o comando printf, ele imprimi a letra para qual o endereço aponta, 
+que no caso é P;
+
+f = e --> é a mesma explicação do item e, porém, quando p3= p3+4, ele anda 4 bytes, por isso, ele vai apontar para o endereço 4 bytes após o endereço inicial;
+
+g = t --> podemos usar a mesma linha de raciocinio dos itens "e" e "f", porém nessa expressão, 'p3' aponta para um endereço anterior por causa do decremento;
+
+h = 31 -->  'p4' vai apontar para o endereço do valor que ocupar a primeira posição do vetor. Idade vai ser igual ao valor para o qual o endereço armazenado em p4 aponta;
+
+i = 45 --> 'p5' vai apontar para o endereço do valor que ocupar a segunda posição do vetor, pois teve um incremento de +1. 
+Idade vai ser igual ao valor para o qual o endereço armazenado em p5 aponta;
+
+j = 27 --> 'p4' vai apontar para o endereço do valor que ocupar a terceira posição do vetor, pois 'p4' aponta para o endereço armazenado em p5 após andar um byte.
+Idade vai ser igual ao valor para o qual o endereço armazenado em p4 aponta;
+
+l = 31 --> 'p4' vai apontar para o endereço do valor que ocupar a primeira posição do vetor, pois p4 voltou para o endereço localizado a 2 bytes anteriores.
+Idade vai ser igual ao valor para o qual o endereço armazenado em p4 aponta;
+
+m = 45 --> 'p5' vai apontar para o endereço do valor que ocupar a segunda posição do vetor, pois p5 aponta para o endereço do vetor[2] - 1 byte. 
+Quando é executado o comando printf, ele imprimi o valor para qual o endereço aponta, que no caso é 45;
+
+n = 27 --> 'p5' vai apontar para o endereço do valor que ocupar a terceira posição do vetor, pois p5 vai ter um imcremento de 1 byte
+Quando é executado o comando printf, ele imprimi o valor para qual o endereço aponta, que no caso é 27.
 
 
 
