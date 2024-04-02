@@ -1,0 +1,22 @@
+1. Seja o seguinte trecho de programa:
+
+int i=3,j=5;
+int *p, *q;
+p = &i;
+q = &j;
+
+- Determine o valor das seguintes expressões, justificando o porquê de cada resultado:
+
+◦ p == &i --> = 1 
+--> No código supracitado foi atribuido a 'p' o endereço de i, logo p aponta para i. Como isso é verdade, o valor da expressão é 1;
+
+◦ *p - *q; --> = -2
+--> Nessa expressão, ela quer a subtração do valor apontado por p do valor apontado por q. No código, ele nos informa que o valor de *p = 3 e o valor de *q = 5
+logo *p - *q = 3-5 = -2;
+
+◦ **&p --> = 3
+--> Nessa expressão estamos acessando o valor apontado por 'p', que é o endereço de i, após isso, acesssamos o valor apontado por esse endereço, que é o próprio valor de i,
+que é = 3
+
+◦ 3 - *p/(*q) + 7 --> Nesta expressão, segue-se a mesma linha de raciocinio da segunda expressão, logo:
+3 - 3/5 + 7 --> 3/5 = 0, por ser uma divisão de inteiros, só pegamos o primeiro número antes da virgula, que é 0, por isso: 3 - 0 + 7 = 10.
