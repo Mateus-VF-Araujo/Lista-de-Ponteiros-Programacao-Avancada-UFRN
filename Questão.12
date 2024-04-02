@@ -10,6 +10,6 @@ scanf("%f", &aloha); --> Inválido: para que se possa ler um valor do array, é 
 aloha = "value"; --> Inválido: não se pode atribuir uma string a um array float
 printf("%f", aloha); --> Inválido: é preciso especificar qual posição do array você quer imprimir
 coisas[4][4] = aloha[3]; --> Válido: pois está sendo atribuido um valor de uma posição especifica do array em uma posição especifica da matriz
-coisas[5] = aloha; --> 
-pf = value; --> Inválido: o ponteiro não pode apo
-pf = aloha;
+coisas[5] = aloha; --> Inválido, pois são de tipos imcompatíveis 
+pf = value; --> Inválido: pois um float não pode ser atribuido a um ponteiro
+pf = aloha; -->
