@@ -34,7 +34,7 @@ int main() {
   
     int (*pFuncao)(int, int); // Declaração de um ponteiro para uma função que retorna um int e aceita dois int como argumentos
 
-  int (*pFuncaoRadiciacao)(int); // Declaração de um ponteiro para uma função que retorna um int e aceita dois int como argumentos
+    int (*pFuncaoRadiciacao)(int); // Declaração de um ponteiro para uma função que retorna um int e aceita dois int como argumentos
 
 
     pFuncao = adicao; // Atribui o endereço da função adição ao ponteiro
@@ -52,7 +52,7 @@ int main() {
     pFuncao = potenciacao; // Atribui o endereço da função potenciacao ao ponteiro
     printf("Potenciação: %d\n", pFuncao(10, 4)); // Chama a função através do ponteiro
 
-      pFuncaoRadiciacao = radiciacao; // Atribui o endereço da função radiciacao ao ponteiro
+    pFuncaoRadiciacao = radiciacao; // Atribui o endereço da função radiciacao ao ponteiro
     printf("Radiciação: %d\n", pFuncaoRadiciacao(100)); // Chama a função através do ponteiro
 
     return 0;
