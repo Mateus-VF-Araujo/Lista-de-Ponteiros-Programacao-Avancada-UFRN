@@ -3,3 +3,37 @@ explique o que acontece em cada um deles.
 
 Memory leak, ou vazamento de memória, é um problema que ocorre em sistemas computacionais quando uma parte da memória, alocada para uma determinada
 operação, não é liberada quando se torna desnecessária
+
+
+#include <stdlib.h>
+int main() {
+    while (1) {
+        int *ptr = (int *)malloc(sizeof(int)); // Alocação de memória
+        // Não há desalocação de memória
+    }
+    return 0;
+}
+
+Nesse primeiro exemplo não existe a libereção da memória, ou seja o uso do free()
+
+
+    void f(int n){
+    char *m = malloc(10);
+    char *n = malloc(10);
+    free(m);
+    m = n;
+    free(m);
+    free(n);
+}
+
+Nesse segundo exemplo, acontece a liberação da memória do ponteiro m, porém ao atribuir o endereço de n a m, acontece uma memory leak, já que não podemos mais acessar
+o endereço de memória do ponteiro m.
+
+#include <stdlib.h>
+int main() {
+    int *ptr = (int *)malloc(sizeof(int)); // Alocação de memória
+    ptr = NULL; // Perda do ponteiro original
+    return 0;
+}
+
+No último caso, ocorre a alocação de memória, porém ao atribuir NULL ao ponteiro, acontece a perda de memória do ponteiro, não podendo mais acessá-lo
